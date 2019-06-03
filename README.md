@@ -18,3 +18,12 @@ docker run --rm -it -p 8080:8080/tcp southteams-ski-v2:latest
 
 
 # Changelog
+* Fix "blizzard bug"
+* Scores and lives (You may only crash twice)
+* Pause with "p"
+* Restart with "r"
+* Added basic tests (Mocked canvas with jest-canvas-mock)
+
+# TODOS
+* Jumping
+* Rhino attack
