@@ -4,7 +4,7 @@ import { Canvas } from './Canvas';
 import { Skier } from "../Entities/Skier";
 import { ObstacleManager } from "../Entities/Obstacles/ObstacleManager";
 import { Rect } from './Utils';
-import { ScoreManager } from './Score';
+import { ScoreManager } from './ScoreManager';
 
 export class Game {
     gameWindow = null;
@@ -100,7 +100,6 @@ export class Game {
     }
 
     handleKeyDown(event) {
-        console.log(event.which);
         if(!this.gameOver) {
             switch(event.which) {
                 case Constants.KEYS.LEFT:
@@ -119,6 +118,10 @@ export class Game {
                     this.skier.turnDown();
                     event.preventDefault();
                     break;
+                case Constants.KEYS.JUMP:
+                    this.skier.jump();
+                    event.preventDefault();
+                    break;                    
                 case Constants.KEYS.RESTART:
                     this.restart();
                     event.preventDefault();

@@ -1,9 +1,25 @@
+/**
+ * Checks if two Rect instances intersect
+ * @param {Number} min the minimal number of the random int
+ * @param {Number} max the max number of the random int
+ * @example 
+ * randomInt(10, 10)
+ * @returns {Number} Random int number
+ */
 export function randomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+/**
+ * Checks if two Rect instances intersect
+ * @param {Object<Rect>} rect1 the Rect instance
+ * @param {Object<Rect>} rect2 the second Rect instance
+ * @example 
+ * intersectTwoRects(new Rect(10, 10, 10, 10), new Rect(10, 10, 10, 10))
+ * @returns {Object} Object with which it collisioned
+ */
 export function intersectTwoRects(rect1, rect2) {
     return !(rect2.left > rect1.right ||
         rect2.right < rect1.left ||

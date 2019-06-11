@@ -6,14 +6,19 @@ const assetTypes = [
     Constants.TREE,
     Constants.TREE_CLUSTER,
     Constants.ROCK1,
-    Constants.ROCK2
+    Constants.ROCK2,
+    Constants.RAMP
 ];
 
 export class Obstacle extends Entity {
+
+    jumpable = false;
+
     constructor(x, y) {
         super(x, y);
 
         const assetIdx = randomInt(0, assetTypes.length - 1);
         this.assetName = assetTypes[assetIdx];
+        this.jumpable = Constants.JUMPABLE_OBSTACLES[this.assetName] || this.jumpable;
     }
 }
