@@ -25,6 +25,7 @@ export class ScoreManager {
     constructor(canvasRef) {
       this.canvas = canvasRef;
     }
+    
     /**
      * Draws the score and crashes
      * @param {Number} score the score to be drawn
