@@ -1,6 +1,6 @@
 import * as Constants from '../../Constants';
-import { randomInt } from '../../Core/Utils';
-import { Obstacle } from "./Obstacle";
+import { randomInt } from '../Utils';
+import { Obstacle } from "../../Entities/Obstacle";
 
 const DISTANCE_BETWEEN_OBSTACLES = 50;
 const STARTING_OBSTACLE_GAP = 100;

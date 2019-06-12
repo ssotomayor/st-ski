@@ -1,10 +1,9 @@
 import "babel-polyfill";
 import { SKIER_DIRECTIONS } from '../Constants';
 import { Skier } from '../Entities/Skier';
+import { Rhino } from '../Entities/Rhino';
 import { Game } from '../Core/Game';
-import { ObstacleManager } from '../Entities/Obstacles/ObstacleManager';
-
-
+import { ObstacleManager } from '../Core/Managers/ObstacleManager';
 
 describe('Obstacles tests', () => {
     let obstacleManager;

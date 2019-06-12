@@ -17,12 +17,27 @@ export const SKIER_STARTING_SPEED = 10;
 export const SKIER_DIAGONAL_SPEED_REDUCER = 1.4142;
 export const LIVES = 2;
 
+
+// Rhino
+export const RHINO_RUN_FRAME_1 = 'rhinoRun1';
+export const RHINO_RUN_FRAME_2 = 'rhinoRun2';
+export const RHINO_EAT_FRAME_1 = 'rhinoEat1';
+export const RHINO_EAT_FRAME_2 = 'rhinoEat2';
+export const RHINO_EAT_FRAME_3 = 'rhinoEat3';
+export const RHINO_EAT_FRAME_4 = 'rhinoEat4';
+export const RHINO_EAT_FRAME_5 = 'rhinoEat5';
+export const RHINO_EAT_FRAME_6 = 'rhinoEat6';
+export const RHINO_SPAWN_POINTS_THRESHOLD = 1000;
+export const RHINO_RUN_SPEED = 10;
+export const RHINO_SPAWN_POSITION_FROM_SKIER = 250;
+
 // Obstacles
 export const TREE = 'tree';
 export const TREE_CLUSTER = 'treeCluster';
 export const ROCK1 = 'rock1';
 export const ROCK2 = 'rock2';
 export const RAMP = 'ramp';
+export const RHINO = 'rhino';
 
 export const SPEED_UP_INTERVAL = 2000;
 
@@ -42,7 +57,30 @@ export const ASSETS = {
     [SKIER_JUMP_FRAME_3]: 'img/skier_jump_3.png',
     [SKIER_JUMP_FRAME_4]: 'img/skier_jump_4.png',
     [SKIER_JUMP_FRAME_5]: 'img/skier_jump_5.png',
-    [RAMP]: 'img/jump_ramp.png'
+    [RHINO_EAT_FRAME_1]: 'img/rhino_lift.png',
+    [RHINO_EAT_FRAME_2]: 'img/rhino_lift_mouth_open.png',
+    [RHINO_EAT_FRAME_3]: 'img/rhino_lift_eat_1.png',
+    [RHINO_EAT_FRAME_4]: 'img/rhino_lift_eat_2.png',
+    [RHINO_EAT_FRAME_5]: 'img/rhino_lift_eat_3.png',
+    [RHINO_EAT_FRAME_6]: 'img/rhino_lift_eat_4.png',    
+    [RAMP]: 'img/jump_ramp.png',
+    [RHINO]: 'img/rhino_default.png',
+    [RHINO_RUN_FRAME_1]: 'img/rhino_run_left.png',
+    [RHINO_RUN_FRAME_2]: 'img/rhino_run_left_2.png'    
+};
+
+export const RHINO_EAT_FRAMES_ASSET = {
+    1: RHINO_EAT_FRAME_1,
+    2: RHINO_EAT_FRAME_2,
+    3: RHINO_EAT_FRAME_3,
+    4: RHINO_EAT_FRAME_4,
+    5: RHINO_EAT_FRAME_5,
+    6: RHINO_EAT_FRAME_6
+};  
+
+export const RHINO_RUN_ASSET = {
+    0: RHINO_RUN_FRAME_1,
+    1: RHINO_RUN_FRAME_2
 };
 
 export const JUMPABLE_OBSTACLES = {
